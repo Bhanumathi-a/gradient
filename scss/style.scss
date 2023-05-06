@@ -1,0 +1,154 @@
+$primary: rgb(22, 49, 100);
+$secondary: #f3ff36;
+$danger: #ff4136;
+$light: #fff;
+$dark: #000;
+$Gradient: linear-gradient(145deg, rgba(22, 49, 100, 1) 0%, rgba(97, 181, 172, 1) 77%, rgba(92, 141, 178, 1) 100%);
+$btnGradient: linear-gradient(145deg, rgba(39, 30, 57, 1) 0%, rgba(43, 61, 103, 1) 100%);
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    //   "success":    $success,
+    //   "info":       $info,
+    //   "warning":    $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark
+);
+
+body {
+    background: $primary;
+    background: $Gradient ;
+    background-attachment: fixed;
+    height: 100vh;
+    color: $light;
+
+}
+
+.navbar-brand {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar-brand img {
+    width: 100%;
+}
+
+.nav-link {
+    font-family: "Montserrat";
+}
+
+.nav-link,
+.nav-link:hover,
+.nav-link.active,
+.nav-link:focus {
+    color: $light;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after,
+.nav-link:focus::after {
+    border-bottom: 1px solid $light;
+    display: block;
+    content: '';
+}
+
+.btn-primary {
+    background: rgb(39, 30, 57);
+    border-radius: 25px;
+    background: $btnGradient ;
+    white-space: nowrap;
+    border: none;
+    position: relative;
+    border: 2px solid #281e39;
+    margin: 12px;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    border-color: #281e39;
+}
+
+.btn-primary::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    top: 15px;
+    left: -10px;
+    border: 1px solid #7ce8c6;
+    border-width: 0 0 2px 2px;
+    transition: all 0.2s ease-in;
+    border-radius: 0 0 0 25px;
+}
+
+.btn-primary:hover::after {
+    border-width: 2px;
+    right: -10px;
+    top: -10px;
+    border-radius: 25px;
+}
+
+.searchBox,
+.input-group-text {
+    background: transparent;
+    border: none;
+}
+
+.creativeImg {
+    // width: auto;
+    max-width: 80%;
+    position: relative;
+}
+
+.creativeImg img {
+    width: 80%;
+    position: absolute;
+    top: -100px;
+}
+
+.title {
+    color: $secondary;
+    font-size: 3em;
+    font-family: 'Dela Gothic One';
+}
+
+.text-regular {
+    font-size: 1.2em;
+    font-family: "Montserrat";
+}
+
+.addParticipant {
+    position: relative;
+
+    span {
+        border: 2px solid #468792;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: inline-block;
+        line-height: 20px;
+        text-align: center;
+        color: $light;
+        box-sizing: border-box;
+        position: absolute;
+        background: #7ce8c6;
+    }
+
+    .parti1 {
+        left: 0;
+    }
+
+    .parti2 {
+        left: 20px;
+    }
+
+    .parti3 {
+        background: #f3ff36;
+        left: 40px;
+        color: #281e39;
+
+    }
+}

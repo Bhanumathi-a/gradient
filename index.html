@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DSGN</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@100;400;500;700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="img/fav.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header class="p-3 pt-2">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="img/DSGN-logo.png" alt="DSGN "></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item p-5">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item p-5">
+                                <a class="nav-link" aria-current="page" href="#">Class</a>
+                            </li>
+
+                            <li class="nav-item p-5">
+                                <a class="nav-link" href="#">Creation</a>
+                            </li>
+                            <li class="nav-item p-5">
+                                <a class="nav-link" href="#">FAQ</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex ms-auto ">
+                            <!-- <div class="input-group">
+
+                                <div class="form-floating">
+                                    <input class="form-control searchBox" type="search" placeholder="Search" aria-label="Search">
+                                    <label for="floatingInputGroup1">Search</label>
+                                </div>
+                                <span class="input-group-text"><img src="img/search.png" alt="Search "></span>
+                            </div>
+-->
+                            <a href="checkout.html" type="button" class="me-3"><img src="img/cart.png" alt="Cart "></a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#login" class="btn btn-primary" type="button">Login / Sign Up</a>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="modal fade " id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="container-fluid ">
+            <section class="row ">
+                <div class="col-lg-7 p-5">
+                    <h2 class="title">
+                        Discover<br>
+                        Your Creative Talent<br>
+                        With us!
+                    </h2>
+                    <p class="text-regular pt-4">
+                        Lorem ipsum dolor sit amet consectetuer<br>
+                        adipiscing elit sed diam nonummy<br>
+                        nibh euismod tincidunt ut
+                    </p>
+                    <a class="btn btn-primary" href="#" role="button">Discount Class</a>
+                    <a class="btn btn-primary" href="#" role="button">Catalogue</a>
+                    <p class="text-regular pt-4">
+                        Participants
+                    <div class="addParticipant">
+                        <span class="parti1"></span>
+                        <span class="parti2"></span>
+                        <span class="parti3"><a href="#">+</a></span>
+                    </div>
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="creativeImg">
+                        <img src="img/creative.png" alt="creative">
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+
+</html>
